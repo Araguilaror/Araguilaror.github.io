@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../CSS/Ejercicio 3.css"../CSS/STYLE_PAGE_2.css"" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header><h1>Formularios HTML</h1>
+</header>
+<nav>
+	<ul id="menu">
+    <li><a href="Ejercicio 1.html">Formatos de Texto</a> </li>
+    <li><a href="Listas Final.html">Listas</a> </li>
+    <li><a href="Ejercicio 3.html">Enlaces</a></li>
+    <li><a href="Tablas.html">Tablas</a></li>
+    <li><a href="IMAGENES.html">Imágenes</a></li>
+	<li><a href="AUDIOS.html">Audio</a></li>
+	<li><a href="VIDEOS.html">Videos</a></li>
+	<li><a href="Formularios.html">Formularios</a></li>
+	<li><a href="index.html">Index</a></li>
+  </ul>
+	
+</nav>
+<main>
+  <section>
+<h2>Formulario</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aliquid. Blanditiis, nulla doloremque porro aperiam laboriosam laudantium voluptatum debitis hic magnam quis eos earum quas optio, ipsum tenetur excepturi quasi.</p>
+    <form id="form1" name="form1" method="get">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+		<br><br>
+      <label for="Apellido">Apellido:</label>
+      <input type="text" name="Apellido" id="Apellido">
+		<br><br>
+      <input type="submit" name="Botón1" id="Botón1" value="Enviar">
+      
+    </form>
+    <br>
+  </section>
+  <section>
+    <h2>Formulario usando Select, checkbox y radiobutton</h2>
+    <p>&nbsp;</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aliquid. Blanditiis, nulla doloremque porro aperiam laboriosam laudantium voluptatum debitis hic magnam quis eos earum quas optio, ipsum tenetur excepturi quasi.</p>
+    <form id="form2" name="form2" method="post">
+      <label for="select"><Strong>¿De qué país nos visitas?:</Strong></label>
+      <select name="select" id="país">
+        <option value="MX">México</option>
+        <option value="US">Estados Unidos</option>
+        <option value="Es">España</option>
+        <option value="Ar">Argentina</option>
+        <option value="Co">Colombia</option>
+      </select>
+      <br><br>
+<p> <strong>Genero:</strong>
+		  <br><br>
+	    <label>
+			<input type="radio" name="Genero" value="hombre" id="Genero_0">
+	    Hombre</label>
+	  <br>
+	  <label>
+	    <input type="radio" name="Genero" value="mujer" id="Genero_1">
+	    Mujer</label>
+	  <br><br>
+	  </p>
+<label><strong>¿Cuál será tu residencia durante tu estancia?</strong></label>
+<table width="200">
+	<br><br>
+  <tr>
+    <td><label>
+      <input type="checkbox" name="Residencia_Temporal" value="Hotel" id="Residencia_Temporal_0">
+      Hotel</label></td>
+  </tr>
+  <tr>
+    <td><label>
+      <input type="checkbox" name="Residencia_Temporal" value="Airbnb" id="Residencia_Temporal_1">
+      Airbnb</label></td>
+  </tr>
+  <tr>
+    <td><label>
+      <input type="checkbox" name="Residencia_Temporal" value="Particular" id="Residencia_Temporal_2">
+      Domicilio de amigos/familia</label></td>
+  </tr>
+</table>
+<br><br>
+      <input type="submit" name="Botón2" id="Botón2" value="Enviar">
+    </form>
+    <br>
+    
+   
+  </section>
+  <section>
+    <h2>Formulario de contacto</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aliquid. Blanditiis, nulla doloremque porro aperiam laboriosam laudantium voluptatum debitis hic magnam quis eos earum quas optio, ipsum tenetur excepturi quasi.</p>
+	  <br><br>
+    <form action="Procesamiento.html" id="form3" name="form3" method="post">
+      <label for="Nombre">Nombre:</label>
+      <input name="Nombre" type="text" required="required" id="Nombre" form="form3">
+      &nbsp;
+	  <br><br>
+	<label for="email">Email:</label>
+    <input name="email" type="email" required="required" id="email" form="form3">
+		<br><br>
+    <label for="Mensaje">Mensaje:</label>
+    <textarea name="Mensaje" rows="6" maxlength="150" required="required" id="Mensaje" form="form3">Escribe tu mensaje...</textarea>
+    <input name="submit" type="submit" id="Botón3" formaction="Procesamiento.html" value="Enviar">
+    </form>
+    
+   
+	  
+  </section>
+	
+	<section>
+    <h2>Formulario Encuesta de Satisfacción</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aliquid. Blanditiis, nulla doloremque porro aperiam laboriosam laudantium voluptatum debitis hic magnam quis eos earum quas optio, ipsum tenetur excepturi quasi.</p>
+		<br>
+		
+    <form action="Procesamiento.html" method="post" name="form4" id="form4">
+      
+     
+      
+      <label><strong>Nombre Completo</strong></label>
+      <input name="CasillaNombre" type="text" id="CasillaNombre">
+      <br>
+      <br>
+      <label for="tel"><strong>Telefono de contacto:</strong></label>
+      <input type="tel" name="tel" id="tel">
+      <br>
+      <br>
+      <label><strong>¿Cómo fue tu experiencia con nuestros servicios?</strong></label>
+      <br>
+      <br>
+      <label>
+        <input type="checkbox" name="¿Cómo fue tu experiencia con nuestros servicios?" value="deficiente" id="iquestCoacutemofuetuexperienciaconnuestrosservicios_0">
+        Deficiente</label>
+      <br>
+      <label>
+        <input type="checkbox" name="¿Cómo fue tu experiencia con nuestros servicios?" value="regular" id="iquestCoacutemofuetuexperienciaconnuestrosservicios_1">
+        Regular</label>
+      <br>
+      <label>
+        <input type="checkbox" name="¿Cómo fue tu experiencia con nuestros servicios?" value="agradable" id="iquestCoacutemofuetuexperienciaconnuestrosservicios_2">
+      Agradable</label>
+      <br>
+      <label>
+        <input type="checkbox" name="¿Cómo fue tu experiencia con nuestros servicios?" value="excelente" id="iquestCoacutemofuetuexperienciaconnuestrosservicios_3">
+        Excelente</label>
+      <br>
+      <br>
+      <label><strong>¿Cómo podemos mejorar nuestros servicios?</strong></label>
+      <br>
+      <br>
+      <textarea name="Opinion" maxlength="150" id="Opinion">Máximo 150 caracteres...</textarea>
+      <br>
+      <br>
+      <label><strong>Fecha y hora en que realizaste tu visita</strong></label>
+      <br>
+      <br>
+      <input name="Fecha_Hora" type="datetime-local" id="Fecha_Hora">
+      <br>
+      <br>
+      <br>
+      <input name="submit" type="submit" id="Botón4" formaction="Procesamiento.html" value="Enviar">
+      <br>
+      <br>
+            &nbsp;
+    </form>
+</form>
+    
+   
+	  
+  </section>
+	
+</main>
+
+<footer>
+  <h6>Elaborado por Armando Aguilar Ordoñez</h6>
+</footer>
+</body>
+</html>
